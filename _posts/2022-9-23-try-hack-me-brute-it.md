@@ -3,7 +3,7 @@ layout: post
 title: Try Hack Me Room Brute It
 ---
 
-### Et Tu, Brute It?
+# Et Tu, Brute It?
 
 ## Task 1 About this box
 
@@ -17,7 +17,7 @@ We also start the machine in Task 1 and then we're on our way
 
 Our tasks are further broken down into separate questions and our first question for task 2 is How many ports are open?
 
-# How many ports are open?
+### How many ports are open?
 
 We actually get a straightforward instruction here to use nmap. I followed an example I found on the internet without knowing what the flags are doing. The first command I used was: **nmap -A -T4 [TARGET_IP_HERE]**
 
@@ -31,19 +31,19 @@ To compare this is what we get with only the **-T4** flag
 
 ![_config.yml]({{ site.baseurl }}/images/blog/brute/task2_2.jpg)
 
-# What version of SSH is running?
+### What version of SSH is running?
 
 Our nmap scan shows this to be Open SSH 7.6p1
 
-# What version of Apache is running?
+### What version of Apache is running?
 
 This is part of why we needed those flags, in the first picture above we can see Apache on port 80 running version 2.4.29
 
-# Which Linux distribution is running?
+### Which Linux distribution is running?
 
 Again something we get from the flags used, it shows Ubuntu as part of the server header and again is referenced in the OpenSSH version name. I assumed I didn't have this information already so this was a good reminder to note down information in case we need it for later.
 
-# Search for hidden directories on the web server. What is the hidden directory?
+### Search for hidden directories on the web server. What is the hidden directory?
 
 I used dirbuster to search for hidden file directories. The hint on this suggested using the command **gobuster dir -u [TARGET_IP_HERE] -w common.txt**, I should do more research but I believe this is just a preference for one tool or the other.
 
@@ -51,19 +51,19 @@ I used dirbuster to search for hidden file directories. The hint on this suggest
 
 Coming soon
 
-# What is the user:password of the admin panel?
+### What is the user:password of the admin panel?
 
-# Crack the RSA key you found. What is John's RSA Private Key passphrase?
+### Crack the RSA key you found. What is John's RSA Private Key passphrase?
 
-# user.txt
+### user.txt
 
-# Web flag
+### Web flag
 
 ## Task 4 Privilege Escalation
 
 Coming soon
 
-# Find a form to escalate your privileges. What is the root's password?
+### Find a form to escalate your privileges. What is the root's password?
 
-# root.txt
+### root.txt
 
