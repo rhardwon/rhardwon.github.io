@@ -70,6 +70,8 @@ kramdown:
     
   theme: midnight
 
+excerpt_separator: <!--more-->
+
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
