@@ -2,8 +2,8 @@
 layout: post
 title: Try Hack Me Room Brute It
 ---
+Et Tu, Brute It?
 
-# Et Tu, Brute It?
 ## Task 1 About this box
 
 Try Hack Me breaks down our rooms into tasks. Our Task 1 in this room is mostly an introduction to the room and what we hope to learn about while we're here.
