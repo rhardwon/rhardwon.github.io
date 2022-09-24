@@ -4,7 +4,6 @@ title: Try Hack Me Room Brute It
 ---
 
 # Et Tu, Brute It?
-
 ## Task 1 About this box
 
 Try Hack Me breaks down our rooms into tasks. Our Task 1 in this room is mostly an introduction to the room and what we hope to learn about while we're here.
@@ -12,6 +11,8 @@ We should be learning about **-Brute-force -Hash cracking -Privilege escalation*
 I find it useful to write these things down and refer back to it as sometimes we start to think our goal is to fill in all the answers in this room when really our goals should be to better our understanding of the concepts listed above
 
 We also start the machine in Task 1 and then we're on our way
+
+
 
 ## Task 2 Reconnaissance
 
