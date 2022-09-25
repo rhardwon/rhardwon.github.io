@@ -11,8 +11,7 @@ We should be learning about **-Brute-force -Hash cracking -Privilege escalation*
 I find it useful to write these things down and refer back to it as sometimes we start to think our goal is to fill in all the answers in this room when really our goals should be to better our understanding of the concepts listed above
 
 We also start the machine in Task 1 and then we're on our way
-
-
+<!--more-->
 
 ## Task 2 Reconnaissance
 
