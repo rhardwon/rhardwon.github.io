@@ -47,17 +47,39 @@ Again something we get from the flags used, it shows Ubuntu as part of the serve
 
 I used dirbuster to search for hidden file directories. The hint on this suggested using the command **gobuster dir -u [TARGET_IP_HERE] -w common.txt**, I should do more research but I believe this is just a preference for one tool or the other.
 
+
+
 ## Task 3 Getting a shell
 
-Coming soon
+**"Find a form to get shell on SSH."**
+
+The way this task is written caused me to feel like I missed some steps, but it's just summing up the entire Task 3 end result instead of leading you into how to get started. I had to go back and think about what I now had access to and how that was going to achieve the goal of "find a form to get shell on SSH". The last thing we had done was find the hidden directory at [TARGET_IP_HERE]/admin at the end of task 2.
+
+True to the name of the room we need to take this directory, and use brute it, using a brute force tool. I couldn't remember what tools work for when we want to brute force a web form so I searched for "brute force web form kali linux" and the top respones were all how to use Hydra. 
+
+The most ridiculous step in this entire room might be getting the admin account name from a comment in the page source of this hidden admin page. We are given the comment "Hey John, if you do not remember, the username is admin". 
+
+![_config.yml]({{ site.baseurl }}/images/blog/brute/task3.jpg)
+
+I followed some examples and read a little bit and used the command **hydra -l admin -P rockyou.txt [TARGET_IP_HERE] http-post-form "/admin /index.php:user=^USER^&pass=^PASS^:invalid**
+
+![_config.yml]({{ site.baseurl }}/images/blog/brute/task3_2.jpg)
 
 ### What is the user:password of the admin panel?
 
+Hydra gave us this in the above screenshot, we see our match for admin:password
+
 ### Crack the RSA key you found. What is John's RSA Private Key passphrase?
+
+Coming soon
 
 ### user.txt
 
+Coming soon
+
 ### Web flag
+
+Coming soon
 
 ## Task 4 Privilege Escalation
 
@@ -65,5 +87,6 @@ Coming soon
 
 ### Find a form to escalate your privileges. What is the root's password?
 
-### root.txt
+Coming soon
 
+### root.txt
