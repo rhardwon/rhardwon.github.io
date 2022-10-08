@@ -71,15 +71,15 @@ Hydra gave us this in the above screenshot, we see our match for admin:password
 
 ### Crack the RSA key you found. What is John's RSA Private Key passphrase?
 
-Coming soon
+We are given an RSA key when we get in the admin panel. We want to crack this using John the Ripper. We also got the name "John" in relation to the key. My unfamiliarity with the "John the Ripper" software slowed me down considerably here. I wasted 30 minutes before realizing my first step had to be preparing the RSA key with a line like the following: **ssh2john.py id_rsa > hash**. Then using john with a wordlist, I used the rockyou wordlist. I spent another hour reattempting the brute force and using diffeent wordlists before I realized that the software doesn't output the cracked passwords when you're done and you need to open a log file using John the Ripper. We should find that the pass phrase is "rockinroll".
 
 ### user.txt
 
-Coming soon
+Using the RSA key and cracked pass phrase we can now get on an SSH connection to the server using the following command: **ssh -i id_rsa john@[TARGET_IP_HERE]**. From here we can get our user.txt flag.
 
 ### Web flag
 
-Coming soon
+We already got this flag back at the website login page. Weird choice to take the answer for it after the user.txt flag but hey whatever, we get to move on to Task 4 now.
 
 ## Task 4 Privilege Escalation
 
